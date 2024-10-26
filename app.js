@@ -9,7 +9,7 @@ const jwt = require('jsonwebtoken');
 const app = express();
 app.use(express.json());
 
-dbPath = path.join(__dirname, 'twitterClone.db');
+let dbPath = path.join(__dirname, 'twitterClone.db');
 let db = null;
 
 const initializeDbAndServer = async () => {
